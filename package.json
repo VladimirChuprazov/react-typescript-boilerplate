@@ -101,16 +101,13 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint",
-      "prettier --check",
-      "git add"
+      "prettier --check"
     ],
     "*.json": [
-      "prettier --check",
-      "git add"
+      "prettier --check"
     ],
     "*.css": [
-      "stylelint",
-      "git add"
+      "stylelint"
     ]
   }
 }
