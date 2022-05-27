@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  production:
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+    ports:
+      - 80:80
+
+  dev:
+    command: npm run start
+    build:
+      context: .
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3000:3000
+
+  test:
+    command: npm run test
+    build:
+      context: .
+    environment:
+      - CI=true

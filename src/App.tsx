@@ -1,3 +1,1 @@
-import './global.css';
-
-export const App: React.FC = () => <div />;
+export const App: React.FC = () => <h1>React Boilerplate</h1>;

@@ -1,0 +1,11 @@
+.git
+.gitignore
+.husky
+*.md
+node_modules
+build
+.dockerignore
+Dockerfile
+Dockerfile.production
+compose.yml
+Makefile
